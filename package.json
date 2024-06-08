@@ -12,9 +12,6 @@
     "url": "https://github.com/anubhavgupta/wiz-light.git"
   },
   "homepage": "https://anubhavgupta.github.io/wiz-light/index.html",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "scripts": {
     "start": "npx ts-node index.ts",
     "docs": "npx typedoc",
