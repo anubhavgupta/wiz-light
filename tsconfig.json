@@ -6,5 +6,12 @@
       "preserveConstEnums": true,
       "sourceMap": true
     },
-    "include": ["src/**/*"]
+    "include": ["src/**/*"],
+    "typedocOptions": {
+      "entryPoints": ["src/index.ts"],
+      "out": "docs",
+      "includeVersion": true,
+      "plugin": ["typedoc-material-theme"],
+      "themeColor": "#cb9820",
+  }
 }

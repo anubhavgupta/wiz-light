@@ -9,7 +9,8 @@
   ],
   "scripts": {
     "start": "npx ts-node index.ts",
-    "build": "rm -rf dist/ && npm run build:esm && npm run build:cjs",
+    "docs": "npx typedoc",
+    "build": "rm -rf dist/ && rm -rf docs/ && npm run build:esm && npm run build:cjs && npm run docs",
     "build:esm": "tsc --outDir dist/esm",
     "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
   },
@@ -17,6 +18,8 @@
   "license": "MIT",
   "devDependencies": {
     "ts-node": "^10.9.2",
+    "typedoc": "^0.25.13",
+    "typedoc-material-theme": "^1.0.2",
     "typescript": "^5.4.5"
   }
 }

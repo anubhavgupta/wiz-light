@@ -1,8 +1,48 @@
-// https://aleksandr.rogozin.us/blog/2021/8/13/hacking-philips-wiz-lights-via-command-line;
-
 import { IWizLightOptions, IWizLight, ILightProps, IResponse, IFullStateResponse, IPAdd } from './client.interface';
 import { UDPReqResClient } from "./udpReqResClient";
 
+
+/**
+ * WizLight Client
+ * 
+ * 
+ * Quick tutorial to get a green light on wiz based bulb:
+ * ```JS
+ * const wl = new WizLight('192.168.1.2'); // IP address of your light (check from router)
+ * const data = await wl.setLightProps({
+        r: 0,
+        g: 255,
+        b: 0,
+        dimming: 100
+ *  });
+ * ```
+ * 
+ * Supports options configuration:
+ * 
+ * ```JS
+ * const wl = new WizLight('192.168.1.2', { // IP address of your light (check from router)
+    // Port number; 
+    // Default is 38899
+    port: 38899,
+    
+    // As all the communication happens over UDP, there is no direct response to the request.
+    // We have to wait for some time to receive a message from the device to know if the request was served or not, post 
+    // that time the request is considered as failed and retry mechanism kicks in.
+
+    // This represents the time that we should wait before retrying.
+    // Default is 1000ms
+    statusCheckTimeout: 1000;
+
+    // Number of times we should retry a request in case of a failure.
+    // Default is 5
+    retryTimes: 5;
+ * }); 
+ * 
+ * ```
+ * 
+ * This lib would not have been possible without the help that I received from this article: https://aleksandr.rogozin.us/blog/2021/8/13/hacking-philips-wiz-lights-via-command-line
+ * 
+ */
 class WizLight<S extends string> implements IWizLight {
 
     private  state: ILightProps = {
@@ -14,6 +54,11 @@ class WizLight<S extends string> implements IWizLight {
         dimming: 100
     }
     private udp: UDPReqResClient;
+    /**
+     * Creates a new instance of WizLight client.
+     * @param ip IP address to connect to as a string.
+     * @param options optional options to configer the client.
+     */
     constructor(ip: IPAdd<S>, options?: IWizLightOptions) {
         const mergedOptions = {
             ip,
@@ -82,3 +127,4 @@ class WizLight<S extends string> implements IWizLight {
 export {
     WizLight
 }
+
