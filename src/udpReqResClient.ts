@@ -1,5 +1,8 @@
 import { createSocket, Socket } from 'node:dgram';
 
+/**
+ * UDP client used for communication with the device.
+ */
 class UDPReqResClient {
     private client: Socket;
     private ip: string;
