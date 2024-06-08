@@ -31,11 +31,11 @@ import { UDPReqResClient } from "./udpReqResClient";
 
     // This represents the time that we should wait before retrying.
     // Default is 1000ms
-    statusCheckTimeout: 1000;
+    statusCheckTimeout: 1000,
 
     // Number of times we should retry a request in case of a failure.
     // Default is 5
-    retryTimes: 5;
+    retryTimes: 5,
  * }); 
  * 
  * ```

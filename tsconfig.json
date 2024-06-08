@@ -14,5 +14,6 @@
       "includeVersion": true,
       "plugin": ["typedoc-material-theme"],
       "themeColor": "#cb9820",
+      "cacheBust": true
   }
 }

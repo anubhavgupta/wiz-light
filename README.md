@@ -35,11 +35,11 @@ const wl = new WizLight('192.168.1.2', { // IP address of your light (check from
 
    // This represents the time that we should wait before retrying.
    // Default is 1000ms
-   statusCheckTimeout: 1000;
+   statusCheckTimeout: 1000,
 
    // Number of times we should retry a request in case of a failure.
    // Default is 5
-   retryTimes: 5;
+   retryTimes: 5,
 }); 
 ```
 
