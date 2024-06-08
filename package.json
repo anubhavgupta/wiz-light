@@ -1,12 +1,20 @@
 {
   "name": "wiz-light",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple TS/JS lib to control wiz based lights.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anubhavgupta/wiz-light.git"
+  },
+  "homepage": "https://anubhavgupta.github.io/wiz-light/index.html",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "start": "npx ts-node index.ts",
     "docs": "npx typedoc",
