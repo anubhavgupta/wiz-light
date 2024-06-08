@@ -44,3 +44,6 @@ const wl = new WizLight('192.168.1.2', { // IP address of your light (check from
 ```
 
 This lib would not have been possible without the help that I received from this article: https://aleksandr.rogozin.us/blog/2021/8/13/hacking-philips-wiz-lights-via-command-line
+
+
+For full documentation, please refer: https://anubhavgupta.github.io/wiz-light/classes/WizLight.html
