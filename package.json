@@ -1,6 +1,6 @@
 {
   "name": "wiz-light",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple TS/JS lib to control wiz based lights.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
