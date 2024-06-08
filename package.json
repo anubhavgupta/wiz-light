@@ -1,0 +1,26 @@
+{
+  "name": "wiz-light",
+  "version": "1.0.0",
+  "description": "A simple JS lib to control wiz based lights.",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "npx ts-node index.ts",
+    "build": "rm -rf dist/ && npm build:esm",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
+  },
+  "author": "Anubha Gupta",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "tsc": "^2.0.4"
+  },
+  "dependencies": {
+    "color-rainbow": "^0.0.0",
+    "typescript": "^5.4.5"
+  }
+}
