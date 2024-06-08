@@ -5,6 +5,6 @@
       "removeComments": true,
       "preserveConstEnums": true,
       "sourceMap": true
-    }
-    
+    },
+    "include": ["src/**/*"]
 }

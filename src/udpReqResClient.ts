@@ -1,7 +1,7 @@
-import UDP from 'node:dgram'
+import { createSocket, Socket } from 'node:dgram';
 
 class UDPReqResClient {
-    private client: UDP.Socket;
+    private client: Socket;
     private ip: string;
     private port: number;
     private requestTimeout: number;
@@ -9,7 +9,7 @@ class UDPReqResClient {
     private counter: number;
 
     constructor(ip: string, port: number, requestTimeout: number, retryCount: number) {
-        this.client = UDP.createSocket('udp4');
+        this.client = createSocket('udp4');
         this.ip = ip;
         this.port = port;
         this.requestTimeout = requestTimeout ?? 1000;
