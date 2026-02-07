@@ -80,8 +80,7 @@ class UDPReqResClient {
                     rej('ERROR');
                     console.error('Failed to send packet !!', err);
                 }
-                console.log('sent!!');
-                //cleanup();
+                cleanup();
             });
             
         });
