@@ -18,7 +18,7 @@ TypeScript library for controlling Philips Wiz smart lights via UDP communicatio
 
 ```bash
 # Navigate to the skill directory first
-cd wiz-light-skill
+cd wiz-light
 
 # Install dependencies
 npm install
@@ -156,7 +156,7 @@ The skill includes ready-made scripts for quick light control. **When the user w
 
 ```bash
 # Navigate to the skill directory first
-cd wiz-light-skill
+cd wiz-light
 
 # Install dependencies
 npm install
@@ -216,4 +216,5 @@ node scripts/light-status.js 192.168.1.2
 - **[references/API.md](references/API.md)** - Complete API documentation
 - **[references/examples.md](references/examples.md)** - Common use cases
 - **[references/scheduling.md](references/scheduling.md)** - Scheduling with node-cron
+
 
