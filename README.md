@@ -2,7 +2,32 @@
 
 A small and quick library to control your wiz based lights via javascript.
 
+This Library now supports both Regular development and AI based development. 
 
+## AI based direct usage / script creation
+
+For AI based direct usage / script creation, you can install the provided skill by:
+```sh
+npx skill add anubhavgupta/wiz-light
+```
+### This skill in 2 ways:
+#### 1) Direct Usage (directly turning on/off lights, change color without writing any code) 
+```sh
+/ wiz-light turn on the lights
+--> asks for light's local ip and then turns it on.
+
+/ wiz-light turn off the lights
+/ wiz-light get light status
+/ wiz-light turn on the lights
+/ wiz-light change color to red
+```
+#### 2) Script creation (use the library to create a script to perform some complex light related action)
+```sh
+/ wiz-light create script for rainbow effects.
+/ wiz-light Always turn on the light at 9AM in the morning and turn it off at 9PM.
+```
+
+## For regular use (non-AI):
 npm install instructions:
 ```sh
 npm install wiz-light --save
