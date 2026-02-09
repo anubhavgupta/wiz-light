@@ -1,6 +1,6 @@
 ---
 name: wiz-light
-description: Control Philips Wiz smart lights via Node.js library. Use when Claude needs to: (1) Create WizLight instances with IP addresses, (2) Control light status (on/off), (3) Set colors (RGB, RGBW, RGBCW), (4) Adjust brightness, (5) Retrieve light status, (6) Configure connection options (port, timeout, retries), (7) Schedule light control with node-cron, (8) Run ready-made light control scripts
+description: "Control Philips Wiz smart lights via Node.js library. Use when Claude needs to: (1) Create WizLight instances with IP addresses, (2) Control light status (on/off), (3) Set colors (RGB, RGBW, RGBCW), (4) Adjust brightness, (5) Retrieve light status, (6) Configure connection options (port, timeout, retries), (7) Schedule light control with node-cron, (8) Run ready-made light control scripts"
 ---
 
 # Wiz-Light Skill
@@ -216,3 +216,4 @@ node scripts/light-status.js 192.168.1.2
 - **[references/API.md](references/API.md)** - Complete API documentation
 - **[references/examples.md](references/examples.md)** - Common use cases
 - **[references/scheduling.md](references/scheduling.md)** - Scheduling with node-cron
+
