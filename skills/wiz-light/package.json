@@ -1,0 +1,20 @@
+{
+  "name": "wiz-light-skill",
+  "version": "1.0.0",
+  "description": "Skill for controlling Philips Wiz smart lights",
+  "main": "SKILL.md",
+  "type": "module",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "keywords": [
+    "wiz",
+    "smart-lights",
+    "philips",
+    "lighting"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "wiz-light": "^1.0.3"
+  }
+}
